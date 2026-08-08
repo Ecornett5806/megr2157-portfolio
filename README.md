@@ -2,7 +2,8 @@
 
 This repository is an MkDocs site (same engine Fab Academy uses) with the Analyze / Decide / Communicate framework built into every assignment page. The rendered site — with the left-hand navigation to every assignment — lives in `docs/`; this README is just for people working with the repo itself.
 
-## Preview locally
+
+## Don't do, possible save for later. Preview locally
 
 ```bash
 pip install -r requirements.txt
@@ -30,10 +31,10 @@ docs/
     a5/index.md
     a6/index.md
     a7/index.md
-    a8-gears/index.md
-    a9-pulleys/index.md
-    a9x-concept-selection/index.md   <- Pugh matrix: gear vs. pulley vs. lead screw
-    a10-lead-screw-system/index.md
+    a8/index.md
+    a9/index.md
+    ?a9x-concept-selection/index.md   <- Pugh matrix: gear vs. pulley vs. lead screw
+    a10/index.md
 templates/
   assignment-template.md    <- blank copy for reference, not part of the published site
 ```
