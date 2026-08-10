@@ -11,6 +11,7 @@ theme:
 
 nav:
   - Home: index.md
+  - About Me: aboutmet/index.md
   - Portfolio Overview: portfolio-overview.md
   - Assignments:
       - A1: assignments/a1/index.md
