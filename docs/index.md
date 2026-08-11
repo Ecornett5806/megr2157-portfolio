@@ -1,6 +1,6 @@
 # MEGR 2157 – Design Portfolio
 
-![MEGR 2156-7 Title](portfolio-overview.md)
+![MEGR 2156-7 Title](MEGR2156title.png)
 
 Modeled on the Fab Academy documentation approach, this site is the working home for your design portfolio across the semester. Every entry follows the same three-part structure so a reader — including a future employer — can see not just *what* you built, but *how you decided to build it that way*.
 
