@@ -2,7 +2,7 @@
 
 ![MEGR 2156-7 Title](MEGR2156title.png)
 
-Modeled on the Fab Academy documentation approach, this site is the working home for your design portfolio across the semester. Every entry follows the same three-part structure so a reader — including a future employer — can see not just *what* you built, but *how you decided to build it that way*.
+This site is the working record of your engineering design decisions across MEGR 2157. Every entry follows the Analyze, Decide, Communicate structure in accordance with standard engineering documentation practice, so a reader can see not just what you built, but how and why you built it that way. Engineering documentation is a skill developed through deliberate practice. Each assignment is an opportunity to improve the precision, clarity, and professional quality of how you record and defend your work. As you progress through the semester your engineering capability will grow alongside your documentation — this portfolio is the record of that journey.
 
 > **Engineering is the art of making decisions you can defend.**
 
