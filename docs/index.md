@@ -8,7 +8,7 @@ Modeled on the Fab Academy documentation approach, this site is the working home
 
 ## The three pillars
 
-Every assignment page is organized around:
+Most assignment pages are organized around:
 
 - **Analyze** — the calculations, models, and data behind your design.
 - **Decide** — the choice you made and, critically, the reasoning for it.
@@ -22,4 +22,4 @@ Use the navigation on the left to move between assignments.
 - **Act II (Weeks 8–11):** Surveying the machine-element landscape and formally comparing options.
 - **Act III (Weeks 12–15):** Building the complete lead screw translating system.
 
-By A10, every design decision you defend should trace back to something you analyzed and communicated earlier in this site.
+By A11, every design decision you defend should trace back to something you analyzed and communicated earlier in this site.
