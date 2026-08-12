@@ -1,2 +1,12 @@
-#Assignment 11
-<img width="909" height="419" alt="image" src="https://github.com/user-attachments/assets/1cb80125-cc3d-4913-b61b-2fa84d0d148e" />
+# A11 – Motor Selection
+
+## Objective
+
+
+## Analyze
+
+
+## Decide
+_Reference your concept selection (Pugh matrix) here. How does this design follow from that decision?_
+
+## Communicate
