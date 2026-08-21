@@ -41,7 +41,13 @@ The governing model for the clothespin is static equilibrium, where the sum of m
 b(ii):
 The assumption is that the two wooden bodies are rigid bodies, and their deformation is negligible compared with the movement produced by the spring.
 
-c:
+c:  
+<img width="3021" height="520" alt="IMG_1377" src="https://github.com/user-attachments/assets/6ed62425-ff18-4fa2-88f7-5dd57c832d45" />
+
+<img width="3021" height="520" alt="IMG_1378" src="https://github.com/user-attachments/assets/29f87c28-e748-4cb4-b145-c68edaf8a62d" />
+
+<img width="1252" height="1060" alt="IMG_1379" src="https://github.com/user-attachments/assets/eb2f4875-1d80-4849-8e0c-1d0802906a93" />
+
 ## Decide
 
 
