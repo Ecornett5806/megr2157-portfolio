@@ -43,11 +43,15 @@ The assumption is that the two wooden bodies are rigid bodies, and their deforma
 
 c:  
 <img width="3021" height="520" alt="IMG_1377" src="https://github.com/user-attachments/assets/6ed62425-ff18-4fa2-88f7-5dd57c832d45" />
+Top Wooden Ridged Body: 
+The wooden body has an elongated shape that creates a lever arm between the pivot and the handle where the user applies a force. This force creates a moment about the pivot, causing the jaws to separate. When the user releases the force from the handle, the spring creates an opposing moment that closes the jaws and brings them to equilibrium.
 
 <img width="3021" height="520" alt="IMG_1378" src="https://github.com/user-attachments/assets/29f87c28-e748-4cb4-b145-c68edaf8a62d" />
-
+Bottom wooden Ridged Body: 
+The wooden body has a similar elongated shape that creates a lever arm between the pivot and the handle, positioned in the opposite direction from the top body where the user applies a force. This force creates a moment about the pivot, causing the jaws to separate. When the user releases the force from the handle, the spring creates an opposing moment that closes the jaws and brings them to equilibrium. The two wooden bodies are essentially mirrored components, but they produce moments in opposite rotational directions about the pivot.
 <img width="1252" height="1060" alt="IMG_1379" src="https://github.com/user-attachments/assets/eb2f4875-1d80-4849-8e0c-1d0802906a93" />
-
+Metal Spring:
+The spring is a coiled spring that stores Potential elastic energy with 2 L shaped bars that apply a restoring force to the 2 wooden ridged bodies that creates opposing moments around the pivot causing the jaws to close when the applied force is released.
 ## Decide
 
 
