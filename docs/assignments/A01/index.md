@@ -24,10 +24,24 @@ Zach uses links such as his LinkedIn account and multiple companies he started a
 
 B-Reproducibility: 
 I have come to the conclusion that The portfolio has very limited reproducibility because Zachs is more about what he has accomplished, because of that he gives little to no details on how he completed these projects and more just describes what they are or what they do. Without information explaining how and why the projects were completed, a colleague would not have enough information to reproduce the work or even begin the process without asking Zach for additional information.
+
 C- Evidence of reasoning:
 Zach's evidence of reasoning is very limited because his portfolio mainly focuses on the final results of his projects. He rarely explains how he arrived at those results or why he made the decisions that led to them. This makes it difficult for the reader to understand his problem-solving process or evaluate whether the methods he chose were appropriate. For example, he has small paragraphs describing what the infographics are, but they do not explain his reasoning to why he chose these topics.
+
 D- Professional tone: 
 Zach is very consistent with a professional tone while also mixing in his own brand of humor and conversational language. He maintains a professional and formal tone when he is talking about his qualifications and his technical abilities and in his introduction, he shows off his more humorous and less formal side. Overall, he shows his ability to be professional when it matters but also shows off his unique and distinct personality. 
+
+Task B: Clothespin:
+a: The primary function of a clothespin is to convert an applied hand force into a clamping force between its two jaws allowing for objects to be secured in the jaws. The governing model for the clothespin is static equilibrium, where the sum of moments of the pivot is zero. This is because both sides of the clothespin exert opposing moments about the pivot achieving static equilibrium. 
+
+b(i):
+
+The governing model for the clothespin is static equilibrium, where the sum of moments about the pivot is zero. The forces acting on the clothespin create opposing moments about the pivot, allowing the mechanism to remain in equilibrium. This is shown by ∑M_pivot =0, where M is the moment about the pivot, F is the applied force, and d is the perpendicular distance from the pivot to the force. The moment is calculated as M=Fd.
+
+b(ii):
+The assumption is that the two wooden bodies are rigid bodies, and their deformation is negligible compared with the movement produced by the spring.
+
+c:
 ## Decide
 
 
