@@ -52,6 +52,18 @@ The wooden body has a similar elongated shape that creates a lever arm between t
 <img width="1252" height="1060" alt="IMG_1379" src="https://github.com/user-attachments/assets/eb2f4875-1d80-4849-8e0c-1d0802906a93" />
 Metal Spring:
 The spring is a coiled spring that stores Potential elastic energy with 2 L shaped bars that apply a restoring force to the 2 wooden ridged bodies that creates opposing moments around the pivot causing the jaws to close when the applied force is released.
+
+d: Using patent research, identify the patent number and author(s).
+Patent: U.S. Patent No. 10,163, "Spring-clamp for clotheslines," invented by David M. Smith, patented October 25, 1853.
+
+i:  List at least two alternative solutions or devices that solve the same primary function.
+Alternative device A: chip clip- Uses a different material/Design but has the same primary function. 
+Alternative device B: Binder clip- Uses a metal spring mechanism to clamp/hold papers/materials together.  
+
+ii: Identify one design decision the original engineer made: something you can see in the patent or geometry: and explain why you think they made that choice.
+
+In David M. Smith's original patent, he presents three figures. Figures 1 and 2 show his improved clothes-pin design, while Figure 3 shows the clothes-pin commonly made and used at the time. One design decision Smith made was changing the geometry of the common clothes-pin shown in Figure 3. His design uses two longer lever arms connected by a hinge, with a spring positioned between the upper legs, creating an early version of the spring-loaded design used in modern clothespins. He explains that this design allows the user to apply force to the longer lever arms, causing the shorter gripping ends to separate. When the force is released, the spring creates a restoring force that closes the gripping ends around the clothing and clothesline. He made this design change because he states that it does not strain or injure the clothes like the common wooden pin and that it cannot be detached by wind as the common pin could.
+
 ## Decide
 
 
