@@ -21,6 +21,7 @@ Morgan's portfolio is somewhat professional, but at some points it strays a litt
 
 Portfolio-2: Zachlq Professional Portfolio: 
 https://github.com/Zachlq/Professional_Portfolio
+
 A-Navigation:
 Zach uses links such as his LinkedIn account and multiple companies he started as a way to allow the reader to see and learn more information about his portfolio and who he is. that being said this portfolio lacks individual assignments its more explaining what he has done through his professional work. It also struggles to keep the reader in the portfolio itself and is more of a navigation hub to other ways to learn more about his work. Because of this, the portfolio is easy to navigate to outside resources, but it is less effective at allowing a reader to quickly locate and review a specific piece of work within the portfolio itself.
 
