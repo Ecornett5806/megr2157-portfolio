@@ -65,7 +65,10 @@ ii: Identify one design decision the original engineer made: something you can s
 In David M. Smith's original patent, he presents three figures. Figures 1 and 2 show his improved clothes-pin design, while Figure 3 shows the clothes-pin commonly made and used at the time. One design decision Smith made was changing the geometry of the common clothes-pin shown in Figure 3. His design uses two longer lever arms connected by a hinge, with a spring positioned between the upper legs, creating an early version of the spring-loaded design used in modern clothespins. He explains that this design allows the user to apply force to the longer lever arms, causing the shorter gripping ends to separate. When the force is released, the spring creates a restoring force that closes the gripping ends around the clothing and clothesline. He made this design change because he states that it does not strain or injure the clothes like the common wooden pin and that it cannot be detached by wind as the common pin could.
 
 ## Decide
+Intro section: 
+This portfolio serves as a central record of my projects throughout this semester and beyond. It documents my design projects, engineering analyses, and the decisions made throughout the design process. The portfolio is organized to allow readers to easily access and navigate between projects. Each project documents not only the final result, but also the reasoning, calculations, and design decisions used to reach that result. My ultimate goal is for readers to understand the engineering process behind each project and have enough information to apply the methods and reasoning to similar challenges independently.
 
-
+One Intentional Customization: 
+I chose to change the section labels to be less generic because this allows the reader to be more informed about what they are looking at. For example, I plan to change labels to be more descriptive, such as changing "Assignments" to "Engineering Projects" or another label that provides more information about the content. This change better satisfies the requirement for efficient navigation because the reader can understand the purpose of a section without having to open it first.
 ## Communicate
 
