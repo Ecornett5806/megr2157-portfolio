@@ -20,7 +20,9 @@ D- Professional tone:
 Morgan's portfolio is somewhat professional, but at some points it strays a little bit from a professional tone. I say this because he explains his thought process in a way engineering students and professors alike could understand but his wording is what makes his tone shift to slightly informal based on the words he uses such as "I want to make my beams square shaped for simplicity" it could be worded a little more technically in a professional setting, such as a brief explanation to why the square cross section simplifies the design. 
 
 Portfolio-2: Zachlq Professional Portfolio: 
+
 https://github.com/Zachlq/Professional_Portfolio
+
 
 A-Navigation:
 Zach uses links such as his LinkedIn account and multiple companies he started as a way to allow the reader to see and learn more information about his portfolio and who he is. that being said this portfolio lacks individual assignments its more explaining what he has done through his professional work. It also struggles to keep the reader in the portfolio itself and is more of a navigation hub to other ways to learn more about his work. Because of this, the portfolio is easy to navigate to outside resources, but it is less effective at allowing a reader to quickly locate and review a specific piece of work within the portfolio itself.
