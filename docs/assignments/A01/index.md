@@ -76,3 +76,4 @@ My documentation standard for this class is going to be very blunt and, hopefull
 
 ## Communicate
 My communicate section is under my All about me page. 
+And I spent a combined week on this assignment between A1 and setting up the portfolio. 
