@@ -6,7 +6,8 @@ Use two portfolios and Respond to the following questions in the Analyze section
 Portfolio-1 MEGR 2156 Sophomore Design Morgan Gregory
 https://uncc.instructure.com/eportfolios/4731/home/landing
 
-A-Navigation:
+A-Navigation: 
+
 Morgan's portfolio has a structured "landing" page that acts as his homepage, with easily accessible links on the side connecting to each assignment and an About Me page. These links remain available on each page, so the reader does not have to return to the homepage to move between assignments. This organization makes the portfolio easier to navigate and reduces the time required to locate a specific assignment, helping it meet the 60-second standard.
 
 B-Reproducibility: 
