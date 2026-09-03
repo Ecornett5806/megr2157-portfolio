@@ -1,7 +1,7 @@
 # A2 – Truss Stress Analysis
 
 ## Objective
-The goal of this project is to design a lightweight planar truss that can support the applied 20–30 kN force while satisfying the given geometric and design constraints. From Figure 1, point B is a roller support, which provides only a vertical (Y-direction) reaction force. Point A is a pin support, which can provide both horizontal (X-direction) and vertical (Y-direction) reaction forces.
+The goal of this project is to design a lightweight planar truss that can support the applied 25 kN force while satisfying the given geometric and design constraints. From Figure 1, point B is a roller support, which provides only a vertical (Y-direction) reaction force. Point A is a pin support, which can provide both horizontal (X-direction) and vertical (Y-direction) reaction forces.
 
 The geometry of the truss can also be determined from Figure 1. The distance from B to C is 0.3 m. Because the truss is symmetrical, the corresponding distance from A to D is also 0.3 m. The total distance from A to B is 1.2 m, which is divided into three 0.4 m sections.
 
@@ -39,13 +39,40 @@ The following image shows my calculations for parts i–iv, including the knowns
 
 ## Connecting Pin Design
 
-The largest reaction load from the truss analysis is 25 kN. The connecting pins are made from hardened tool steel with a yield shear strength of 170 ksi and a density of 0.278 lb/in³. A safety factor of 4 is required, and the minimum cross-sectional area of the pins is the primary unknown.
+The largest force acting on a connecting pin from the truss analysis is 8.33 kN. The connecting pins are made from hardened tool steel with a yield shear strength of 170 ksi and a density of 0.278 lb/in³. A safety factor of 4 was applied to the yield shear strength to determine the allowable shear stress.
 
-The pin at the support was selected for the FBD because it experiences the largest reaction load of 25 kN. Since the connection is designed as a single-shear connection, the applied reaction produces one shear plane through the pin. This shear force is used to determine the minimum required cross-sectional area.
+The pin with the largest calculated shear force was selected for the free-body diagram. Since the connection is designed as a single-shear connection, the pin experiences one shear plane. The calculated shear force was used to determine the minimum required cross-sectional area of the pin.
 
-The calculated minimum pin diameter was 0.410 in. A 7/16 in. diameter pin was selected as the practical design size because it is larger than the calculated minimum and provides an additional margin above the required shear area.
+The minimum required pin area was calculated as 0.0441 in², which corresponds to a theoretical pin diameter of approximately 0.237 in. I selected a 1/4 in diameter pin as the practical design size because it is larger than the calculated minimum diameter and therefore provides additional capacity while remaining a relatively small and lightweight connection.
 ## Decide
-_Which geometry did you select, and why? This is your first open design choice in the course — defend it._
 
+<img width="1018" height="524" alt="Screenshot 2026-09-02 200613" src="https://github.com/user-attachments/assets/4dee0cce-d635-471a-a645-dbee8b25e685" />
+
+Based on the results of the truss analysis, I selected the member dimensions and pin sizes that satisfy the required safety factors while keeping the structure as lightweight as practical. The largest internal member force was used to size the truss members, ensuring that all members have sufficient cross-sectional area to withstand the calculated loading. The connecting pins were similarly sized using the largest calculated pin force and a safety factor of 4.
+
+For the overall geometry, I used an upside-down trapezoidal configuration with an additional horizontal member connecting the lower joints. This design provides a simple load path between the members while maintaining the geometric constraints given in the problem. The final CAD model represents the truss members as one part and uses separate cylindrical pins at the connections.
+
+## Part 1 Questions: 
+
+For context I used Ai and I am going about this as a conversation:
+My first prompt was: Is this Yeilding because the trapezoid is more likely to slowly bend than snap in half like a rectangle or cylinder? 
+
+From this question, I learned that the expected failure mode is not necessarily determined by the overall shape of the truss. Instead, factors such as whether the member is in tension or compression, the material being used, the applied stress, and the geometry of the individual member all affect the likely failure mode. ChatGPT explained that because A500 structural steel is a ductile material, yielding is a reasonable failure mode to consider for a member loaded in tension. This helped me understand that I should focus on the loading and material properties rather than assuming the trapezoidal shape itself determines how the member will fail.
+
+The material we used is brittle because aluminum is inherently less strong than hardened steel?
+
+From this question, I learned that I didn't completely understand the difference between brittleness and ductility. Now that AI helped me make the connection, I realize that the A500 structural steel is ductile because it can take a significant amount of loading and deform before it folds or fractures. When comparing the stress in my members to the yield strength of the steel, I found that my design stays below the allowable stress, which means yielding should not occur under the expected loading.
+
+One design modification I pitched to the AI to help reduce the likelihood of fracture would be to add another support member to form an “X” in the middle of the truss. This would give both sides additional support and create another path for the forces to travel through the truss. This type of cross-bracing can also be seen in real-world bridges, such as the Medway Bridge in Rochester, England, which uses cross-bracing as part of its truss structure.
+
+## Part 2 Questions:
+
+When looking at the pin, I first asked myself, "How would this pin actually fail?" Since the force is acting perpendicular to the pin and the connection is designed as a single-shear connection, the pin is most likely to fail through shear. Because the pin is made from hardened tool steel and the given failure property is its yield shear strength, the expected failure mode is shear yielding.
+So then my next question was, if you're only getting 8.33 kN of force and the maximum is 170 ksi, is the truss nowhere close to its "breaking point"? The AI explained that the 170 ksi is not a force; it is the yield shear stress of the material. When we account for the safety factor of 4, the actual allowable stress is 42.5 ksi, which made the 8.33 kN force more significant than I initially thought. I learned that although the pin still has some margin before reaching its allowable stress, it is not as far from the design limit as I initially assumed.
+
+My source is: https://www.aisc.org/aisc/publications/steel-construction-manual/15th-ed-steel-construction-manual/?utm_source=chatgpt.com 
+AISC identifies shear yielding as a structural limit state and gives shear-yielding calculations based on the material yield strength and the area subjected to shear. this directly 
 ## Communicate
+Throughout this process, I learned how to naturally progress from determining internal forces and other mathematical concepts to translating those results into an actual CAD design. I also learned how to take a design from the initial concept and develop it into a complete model from scratch. I challenged myself in this assignment by going with my initial design idea instead of immediately choosing what seemed like the simplest design. An upside-down trapezoid was the first geometry that came to mind because of the way the shape could distribute the members and support the applied loads, so I decided to analyze and develop that idea rather than abandoning it for a simpler option.
 
+This project also showed me that my current CAD skills still have room for improvement, particularly when translating engineering calculations into physical geometry. Because of this, I plan to continue developing my CAD skills throughout the remainder of this class so I can become more efficient and confident when creating engineering designs.
