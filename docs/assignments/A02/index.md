@@ -30,16 +30,13 @@ The yield strength and density used in the calculations were obtained from the m
 
 <img width="1480" height="146" alt="Screenshot 2026-09-01 210733" src="https://github.com/user-attachments/assets/15cc9e70-9162-4579-8bea-76c6f038f39b" />
 
-The largest internal force in the truss is 41.67 kN, which occurs in members AD and BC. I used this maximum force to determine the required cross-sectional area for all members, providing a conservative design because every member will have an area capable of supporting the largest calculated force. A safety factor of 3.5 was applied to the yield strength of the A500 structural steel to determine the allowable stress.
+The largest internal force in the truss is 47.46 kN, which occurs in members AD and BC. I used this maximum force to determine the required cross-sectional area for all members, providing a conservative design because every member will have an area capable of supporting the largest calculated force. A safety factor of 3.5 was applied to the yield strength of the A500 structural steel to determine the allowable stress.
 
 The following image shows my calculations for parts i–iv, including the knowns and unknowns, symbolic solution, numerical cross-sectional area, and approximate truss weight.
 
 <img width="4284" height="5712" alt="IMG_1448" src="https://github.com/user-attachments/assets/4f1ceb02-e100-46fc-89db-2b598465aa81" />
 
-Using the calculated cross-sectional area and the total length of the truss members, I determined the approximate weight of the truss to be .027316 lb.
-
 <img width="3024" height="4032" alt="Image_260902_221903" src="https://github.com/user-attachments/assets/84807a9b-905b-4dae-b146-7cfc094b7394" />
-
 
 ## Connecting Pin Design
 
@@ -49,13 +46,16 @@ The pin with the largest calculated shear force was selected for the free-body d
 
 The minimum required pin area was calculated as 0.0441 in², which corresponds to a theoretical pin diameter of approximately 0.237 in. I selected a 1/4 in diameter pin as the practical design size because it is larger than the calculated minimum diameter and therefore provides additional capacity while remaining a relatively small and lightweight connection.
 
-Finally, I determined the approximate combined weight of the two connecting pins using the selected 1/4 in diameter and the density of the hardened tool steel. The calculated combined weight of the pins was .027316 lb.
+Finally, I determined the approximate combined weight of the two connecting pins using the selected 1/4 in diameter and the density of the hardened tool steel. The calculated combined mass of the pins was .027316 lb.
 
 ## Decide
+Based on the results of the truss analysis, I selected the member dimensions and pin sizes that satisfy the required safety factors while keeping the structure as lightweight as practical. The largest internal member force was used to size the truss members, while the largest calculated pin force was used to determine the required pin diameter.
+
+I selected the upside-down trapezoidal configuration because it was the design I initially wanted to investigate, and the analysis showed that it could support the applied 25 kN load while satisfying the required constraints. The final CAD model represents the truss members as one part and uses separate cylindrical pins at the connections.
 
 <img width="1018" height="524" alt="Screenshot 2026-09-02 200613" src="https://github.com/user-attachments/assets/4dee0cce-d635-471a-a645-dbee8b25e685" />
 
-Finally, I determined the approximate combined weight of the two connecting pins using the selected 1/4 in diameter and the density of the hardened tool steel. The calculated combined weight of the pins was .027316 lb.
+Finally, I determined the approximate combined weight of the truss and connecting pins using the calculated member dimensions, the selected 1/4 in diameter pins, and the density of the materials. My hand calculations gave an approximate total weight of 15.45 kg, or 34.06 lb. This was a stark contrast to the CAD model, which predicted a mass of less than 1 kg. I believe the difference is mainly due to differences between my calculated dimensions and the geometry of my CAD model. The CAD model was created from my initial design and may contain dimensions or features that do not perfectly match the calculations I completed by hand. Additionally, I had to use low-carbon steel in Creo because A500 structural steel was not available, which introduces a difference in material properties. This comparison showed me how important it is to carefully verify dimensions, units, material properties, and geometry when transferring calculations into a CAD model.
 
 <img width="744" height="288" alt="Screenshot 2026-09-02 164100" src="https://github.com/user-attachments/assets/43db6ae8-00b2-4b08-8073-c980869e1376" />
 
@@ -84,11 +84,16 @@ One design modification I pitched to the AI to help reduce the likelihood of fra
 ## Part 2 Questions:
 
 When looking at the pin, I first asked myself, "How would this pin actually fail?" Since the force is acting perpendicular to the pin and the connection is designed as a single-shear connection, the pin is most likely to fail through shear. Because the pin is made from hardened tool steel and the given failure property is its yield shear strength, the expected failure mode is shear yielding.
-So then my next question was, if you're only getting 8.33 kN of force and the maximum is 170 ksi, is the truss nowhere close to its "breaking point"? The AI explained that the 170 ksi is not a force; it is the yield shear stress of the material. When we account for the safety factor of 4, the actual allowable stress is 42.5 ksi, which made the 8.33 kN force more significant than I initially thought. I learned that although the pin still has some margin before reaching its allowable stress, it is not as far from the design limit as I initially assumed.
+
+So then my next question was, if you're only getting 8.33 kN of force and the maximum is 170 ksi, is the CAD nowhere close to its "breaking point"? The AI explained that the 170 ksi is not a force; it is the yield shear stress of the material. When we account for the safety factor of 4, the actual allowable stress is 42.5 ksi, which made the 8.33 kN force more significant than I initially thought. I learned that although the pin still has some margin before reaching its allowable stress, it is not as far from the design limit as I initially assumed.
+
+### CAD Model Download
 [truss_file.prt.zip](https://github.com/user-attachments/files/31765403/truss_file.prt.zip)
 
 
-My source is: https://www.aisc.org/aisc/publications/steel-construction-manual/15th-ed-steel-construction-manual/?utm_source=chatgpt.com 
+My source is: American Institute of Steel Construction (AISC), Steel Construction Manual, 15th Edition.
+https://www.aisc.org/aisc/publications/steel-construction-manual/15th-ed-steel-construction-manual/?utm_source=chatgpt.com 
+
 AISC identifies shear yielding as a structural limit state and gives shear-yielding calculations based on the material yield strength and the area subjected to shear. To support my choice of shear yielding as the expected failure mode, I looked at AISC's guidance on steel connections. AISC identifies shear yielding as a possible limit state when a structural component is subjected to shear. Since my pin is loaded in single shear, I determined shear to be the most relevant failure mode to investigate. The pin has a given yield shear strength of 170 ksi, and I used this value with a safety factor of 4 to determine an allowable shear stress of 42.5 ksi. My calculated pin area was then based on keeping the shear stress below this allowable value.
 
 The change I would propose is to make the pin longer so that it has more engagement with the surrounding members. My reasoning comes from real-life fasteners, where the amount of material surrounding and engaging a fastener can affect the strength and stability of the connection. However, I learned that simply making the pin longer does not directly increase its shear strength. Increasing the pin diameter would be a more direct way to increase its shear area and reduce the likelihood of shear failure.
@@ -99,4 +104,4 @@ Throughout this process, I learned how to naturally progress from determining in
 
 This project also showed me that my current CAD skills still have room for improvement, particularly when translating engineering calculations into physical geometry. Because of this, I plan to continue developing my CAD skills throughout the remainder of this class so I can become more efficient and confident when creating engineering designs.
 
-
+I also learned that a successful analytical calculation does not automatically guarantee that the CAD model represents the same design. The difference between my hand-calculated mass and CAD-predicted mass showed me that I need to verify dimensions, units, material properties, and geometry when transferring calculations into a CAD model.
