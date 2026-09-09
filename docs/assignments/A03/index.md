@@ -49,7 +49,7 @@ This allowed Creo to automatically calculate the required bar length based on th
 
 <img width="696" height="358" alt="image" src="https://github.com/user-attachments/assets/6e8baa0e-7bd9-43fb-ba1e-e583bc136fbd" />
 
-Finished product:
+## Finished product:
 
 With the parametric CAD model completed, I was able to move on to the FEA portion of the project. The analytical calculation provided my expected deflection, while the FEA would allow me to verify whether the CAD model produced a similar result under the same loading conditions. The following photo shows the final design of the circular bar in Creo before I added the load and created the FEA setup. At this point, the geometry and dimensions of the bar were complete and based on my calculated design specifications.
 
@@ -124,11 +124,12 @@ The calculations below show the allowable stress, estimated peak stress at the h
 The large change in stress is caused by the stress concentration created by the pin hole. Without the hole, the bar has a relatively uniform cross-section, allowing the load to be distributed more evenly throughout the material. When the hole is introduced, the load must flow around the opening, causing the stress to increase significantly near the edge of the hole. Therefore, the estimated peak stress at the hole is much higher than the nominal stress measured away from the hole in the original FEA model.
 
 This demonstrates why features such as pin holes must be considered when evaluating the strength and safety of a mechanical component. Even when the overall nominal stress is relatively low, a geometric feature can create a much higher local stress that may become critical when compared to the material's allowable stress.
+
 ## Modify Design Parameters
 
 For this design cycle, I changed the load to 200 lbf and increased the diameter to 1 in, while keeping the Young’s modulus the same. I predicted that the required length would increase because of the significantly larger diameter. After calculating the new design, the required cross-sectional area was 0.7854 in² and the required length was approximately 353.429 in.
 
-Pictures of both Graphs and the New A and Length: 
+## Pictures of both Graphs and the New A and Length: 
 
 For this design cycle, I changed the load to 200 lbf and increased the diameter to 1 in, while keeping the Young’s modulus the same. I predicted that the required length would increase because of the significantly larger diameter. After calculating the new design, the required cross-sectional area was 0.7854 in² and the required length was approximately 353.429 in.
 
