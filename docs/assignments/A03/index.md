@@ -106,3 +106,67 @@ Here are my hand calculations for the above section:
 Given my analytical maximum deflection of 0.009000 in and my FEA maximum displacement of 0.008912 in, I calculated the percent difference between the two results. The percent difference came out to approximately 0.98%.
 
 I calculated the percent difference by finding the difference between the two values, dividing that difference by the analytical value of 0.009000 in, and then multiplying by 100. This small percent difference shows that the analytical calculation and FEA result are very close to one another.
+
+The close agreement is expected because the bar has a simple geometry and is primarily subjected to axial loading. The hand calculation assumes a uniform cross-section and axial loading, which closely matches the conditions used in the FEA model. Since there are no major geometric discontinuities or stress concentrations in the original bar, the FEA does not need to capture complicated local behavior. The mesh is therefore sufficient to accurately represent the overall deformation.
+
+For this design, I would trust the FEA result slightly more because it accounts for the actual geometry and boundary conditions of the model. However, the hand calculation provides a useful check to make sure the FEA result is reasonable. The fact that the two results differ by only 0.98% gives confidence that the model and calculations are correct.
+
+## Adding a Hole
+
+For the hypothetical pin hole, I assumed a hole diameter of 0.125 in because a specific hole diameter was not provided. Since the bar width is 0.25 in, the ratio (d/W) is 0.50. Using Peterson's stress concentration chart for a flat bar with a circular hole in tension, the corresponding stress concentration factor is approximately (K_t = 2.16).
+
+The hole is significant because its diameter is relatively large compared to the width of the bar. This removes a substantial portion of the material that would normally carry the applied load. The load must therefore redistribute around the hole, causing the stress to become concentrated near the edge of the opening. The stress concentration factor accounts for this increase in local stress and allows the peak stress at the hole to be estimated.
+
+The calculations below show the allowable stress, estimated peak stress at the hole, and a comparison between the stresses with and without the hypothetical hole.
+
+<img width="3021" height="953" alt="IMG_1472" src="https://github.com/user-attachments/assets/0a6fabc3-5a8e-48a7-b13f-7771cf6f18ac" />
+
+The large change in stress is caused by the stress concentration created by the pin hole. Without the hole, the bar has a relatively uniform cross-section, allowing the load to be distributed more evenly throughout the material. When the hole is introduced, the load must flow around the opening, causing the stress to increase significantly near the edge of the hole. Therefore, the estimated peak stress at the hole is much higher than the nominal stress measured away from the hole in the original FEA model.
+
+This demonstrates why features such as pin holes must be considered when evaluating the strength and safety of a mechanical component. Even when the overall nominal stress is relatively low, a geometric feature can create a much higher local stress that may become critical when compared to the material's allowable stress.
+## Modify Design Parameters
+
+For this design cycle, I changed the load to 200 lbf and increased the diameter to 1 in, while keeping the Young’s modulus the same. I predicted that the required length would increase because of the significantly larger diameter. After calculating the new design, the required cross-sectional area was 0.7854 in² and the required length was approximately 353.429 in.
+
+Pictures of both Graphs and the New A and Length: 
+
+For this design cycle, I changed the load to 200 lbf and increased the diameter to 1 in, while keeping the Young’s modulus the same. I predicted that the required length would increase because of the significantly larger diameter. After calculating the new design, the required cross-sectional area was 0.7854 in² and the required length was approximately 353.429 in.
+
+<img width="446" height="138" alt="Screenshot 2026-09-08 205719" src="https://github.com/user-attachments/assets/7b856fd6-5bf3-4e25-a3da-4c56e4b5828f" />
+
+After determining the new area and length, I used these updated dimensions to run the FEA on the bar. I kept the aluminum material and fixture the same as the original design and applied the 200 lbf load.
+<img width="1914" height="828" alt="Screenshot 2026-09-08 205912" src="https://github.com/user-attachments/assets/44ba6b62-c3ef-4c3d-89db-2ee73512a53b" />
+
+The deflection map showed a maximum displacement of approximately 0.0182 in. This result allowed me to see how the change in the design parameters affected the bar's deformation under the applied load.
+
+The Von Mises stress map showed a maximum stress of 543.9539 psi. I compared this value to the aluminum yield strength of 40 ksi to determine whether the bar would remain below the material's strength.
+
+<img width="1866" height="910" alt="Screenshot 2026-09-08 205922" src="https://github.com/user-attachments/assets/0850e339-7eda-41ea-a49d-0228af713411" />
+
+The Von Mises stress map showed a maximum stress of 543.9539 psi. I compared this value to the 40 ksi yield strength of aluminum and calculated the safety factor. The maximum stress was well below the yield strength, resulting in a safety factor of approximately 73.5. This shows that the bar remains below the yield strength of the aluminum under the applied load.
+
+<img width="3021" height="1340" alt="IMG_1473" src="https://github.com/user-attachments/assets/59a29217-7349-43da-afd2-d3cfd19dd770" />
+
+## My Mistakes:
+
+One mistake I made during this project was initially being unsure about the units in Creo. I was using inches and lbf for my calculations, but I was confused when I did not see PSI listed as a separate unit option. I learned that the IPS unit system is still compatible with psi, since pressure/stress is expressed as lbf/in².
+
+Another mistake I made was entering some of the parameter information incorrectly in the Creo Relations window. I initially tried to enter parameter values directly into the relations instead of setting the values in the Parameters window. I learned that the parameters should be defined first, and the Relations window should be used to connect those parameters to equations and model dimensions.
+
+I also had some difficulty identifying the correct dimension symbols in Creo. I had to determine which dimension controlled the circle diameter and which controlled the extrusion length. I eventually identified d18 as the diameter dimension and d19 as the extrusion depth and connected them to my parameters.
+
+Another issue I encountered was the small difference between my hand calculation and the value displayed by Creo. My hand calculation gave approximately 11.05 in, while Creo displayed approximately 11.04 in. I initially thought this was an error, but I learned that the difference came from rounding. Creo was using the more precise value of the circular area rather than my rounded value of 0.0491 in².
+
+During the FEA setup, I also initially had the force components set incorrectly. I had values of 200 lbf in the X, Y, and Z directions, which did not represent the 400 lbf axial load from my design calculation. I corrected this by using a 400 lbf total force and applying it in the axial direction.
+
+I also initially questioned whether an axial force was correct because the assignment showed the load as being distributed. I learned that axial describes the direction of the force, while distributed describes how the force is applied to the surface. For my model, the 400 lbf force was distributed across the circular end face while acting along the longitudinal axis of the bar.
+
+Finally, I initially thought something was wrong with my Von Mises stress map because most of the bar appeared red/orange. I learned that the colors represent the stress range relative to the minimum and maximum values in the model. The numerical maximum stress was more important than the color itself. The FEA produced a maximum stress of approximately 8.60 ksi, which was below the aluminum yield strength of 40 ksi.
+
+## What I learned:
+
+This project helped me become more comfortable with parametric modeling and FEA in Creo. I learned that small setup details, such as units, parameter relationships, force direction, and how a load is distributed, can have a large effect on the analysis. I also learned the importance of checking FEA results against analytical calculations instead of assuming that the simulation is automatically correct. In this project, my analytical deflection was 0.009000 in and my FEA displacement was 0.008912 in, giving a difference of only approximately 0.98%. This comparison helped me understand how analytical calculations can be used to verify an FEA model.
+
+## Time Spent: 
+Overall, I spent approximately 9 hours working on this project from Sunday through the time of submission. The work was completed on and off rather than in one continuous session. A significant portion of the time was spent learning the Creo interface, troubleshooting mistakes, creating the parametric relations, setting up the FEA, and interpreting the results. So Approximate time spent ~9 hours.
+
