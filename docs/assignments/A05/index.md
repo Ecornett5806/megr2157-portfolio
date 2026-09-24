@@ -66,6 +66,24 @@ For the stiffness-analysis sketch, I created a second multiview drawing showing 
 
 <img width="2284" height="3712" alt="IMG_1644" src="https://github.com/user-attachments/assets/51f931f7-a265-4089-a3e9-33a7b82d784c" />
 
+## Lessons Learned
+
+Governing Failure Mode
+
+One of the main things I learned from the design process was that stiffness can govern a design even when the part is strong enough to handle the applied load. During the calculations, I compared the dimensions required by the stress analysis to the dimensions required by the stiffness analysis. For the features where the stiffness calculation required a larger dimension than the stress calculation, the deflection limit of 0.005 in controlled the final geometry. For example, when the stress calculation required approximately 0.50 × 0.60 in, while the stiffness calculation required approximately 0.50 × 0.20 in, the stress requirement was larger and therefore governed that particular dimension. This showed me that a part cannot be sized based only on whether it will break. It also has to be stiff enough to stay within the required deflection.
+
+Error Propagation
+
+Another lesson I learned was how an error in an earlier feature can affect the calculations for the features that follow it. The load from one feature becomes the reaction load applied to the next feature, so an incorrect reaction force would carry through the rest of the design. I had to repeatedly check my reaction forces and free-body diagrams before using them in the next calculation. This helped prevent an early calculation error from changing the dimensions of the later features. The process showed me why checking each feature before moving to the next one is important instead of waiting until the end to check the entire design.
+
+Assumption Sensitivity
+
+One assumption that affected the design was the symmetric load distribution. I assumed that the 700 lbf applied load was distributed equally between the two sides of the bracket, giving 350 lbf on each side. This made the analysis symmetric and allowed the same loading to be used for the corresponding features. If the load were not distributed equally, one side could experience a larger reaction force than the other. That would increase the bending stress and deflection on that side and could require a larger cross section. This showed me that assumptions used to simplify the analysis can directly affect the final dimensions of the part.
+
+## Overall Lesson
+
+The biggest lesson from this project was that the design process is connected from beginning to end. The material selection affects the allowable stress and stiffness, the reaction forces from one feature become the loads for the next feature, and the assumptions made in the analysis affect the final geometry. I also learned that the first calculated dimension is not necessarily the final CAD dimension. The calculated minimum dimensions need to be checked against the other requirements and then adjusted to practical dimensions that can actually be manufactured and modeled.
+
 ## CAD MODEL MATH: 
 
 I used the results from the stress and stiffness calculations to build the CAD model. The calculated minimum dimensions were used as starting points, and practical dimensions were selected where necessary. For example, the C–E sections required approximately 0.592 in for strength but only 0.201 in for stiffness, so a 0.60-in section height was used. I then modeled the entire bracket as one solid using extrusions, cuts, holes, and symmetry rather than creating A–E as separate parts.
@@ -76,4 +94,6 @@ I used the results from the stress and stiffness calculations to build the CAD m
 
 <img width="492" height="914" alt="image" src="https://github.com/user-attachments/assets/787ae8b4-2887-47bf-95a3-61f503d57ba9" />
 
+The final motor mount was modeled as a single solid in Creo. The horizontal feature supports the motor while the vertical feature provides the connection to the rigid wall. The final model includes the motor opening, shaft opening, four wall clearance holes, and the dimensions established during the analysis.
 
+The completed CAD model was then used to create the engineering drawing, which communicates the final dimensions and features through multiple orthographic views and an isometric view.
