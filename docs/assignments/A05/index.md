@@ -91,6 +91,7 @@ I used the results from the stress and stiffness calculations to build the CAD m
 <img width="2284" height="3712" alt="IMG_1645" src="https://github.com/user-attachments/assets/5d4571ed-9a58-461b-b081-25be284e1530" />
 
 ## CAD MODEL: 
+[a5_bracket.prt.zip](https://github.com/user-attachments/files/32589909/a5_bracket.prt.zip)
 
 <img width="492" height="914" alt="image" src="https://github.com/user-attachments/assets/787ae8b4-2887-47bf-95a3-61f503d57ba9" />
 
