@@ -97,3 +97,29 @@ I used the results from the stress and stiffness calculations to build the CAD m
 The final motor mount was modeled as a single solid in Creo. The horizontal feature supports the motor while the vertical feature provides the connection to the rigid wall. The final model includes the motor opening, shaft opening, four wall clearance holes, and the dimensions established during the analysis.
 
 The completed CAD model was then used to create the engineering drawing, which communicates the final dimensions and features through multiple orthographic views and an isometric view.
+
+<img width="1820" height="1090" alt="image" src="https://github.com/user-attachments/assets/1110a601-06d4-4995-898e-1fbd431307fc" />
+
+Cite: Oberg, E., Jones, F. D., Horton, H. L., & Ryffel, H. H., Machinery's Handbook, 29th ed., p. 641, Table 8a, American National Standard Running and Sliding Fits, ANSI B4.1-1967 (R2009).
+
+Page # 641
+
+The hole connecting the link to Feature A was designed as a running/sliding fit because the link must be able to move relative to the cylindrical feature. Feature A has a preliminary diameter of 0.420 in, which falls within the 0.40–0.71 in nominal size range in Machinery's Handbook. The RC4 running/sliding fit was selected from Table 8a. For this size range, the RC4 fit uses an H8 hole and f7 shaft, with a clearance range of 0.0006–0.0023 in. Therefore, the link hole was specified as 0.4200–0.4210 in, while the mating Feature A diameter is 0.4187–0.4194 in.
+
+Manufacturing Technique
+
+The Feature A hole requires a final diameter of 0.4200–0.4210 in, giving a total allowable tolerance of 0.0010 in. Table 6, ANSI Standard Tolerances, shows that a nominal diameter between 0.40 and 0.71 in has a 0.0010-in tolerance at Grade 8. Table 7, Relation of Machining Processes to Tolerance Grades, shows that reaming can produce Tolerance Grades 6–10 under normal conditions. Since the required Grade 8 tolerance falls within the range for reaming, reaming was selected as the final manufacturing operation.
+
+The hole would therefore be drilled undersize first and then reamed to the final diameter. The drilling operation creates the initial hole, while the reaming operation provides the final dimensional control required for the RC4 running/sliding fit.
+
+Cite: 
+Oberg, E., Jones, F. D., Horton, H. L., & Ryffel, H. H., Machinery's Handbook, 29th ed., Table 6, ANSI Standard Tolerances.
+
+Oberg, E., Jones, F. D., Horton, H. L., & Ryffel, H. H., Machinery's Handbook, 29th ed., Table 7, Relation of Machining Processes to Tolerance Grades, ANSI B4.1-1967 (R2009).
+<img width="1066" height="298" alt="Screenshot 2026-09-23 222125" src="https://github.com/user-attachments/assets/ef4ffa40-849e-4fbb-8835-c40ff174edf1" />
+
+<img width="1070" height="760" alt="Screenshot 2026-09-23 222135" src="https://github.com/user-attachments/assets/cfaab48d-1a0c-4535-805d-78a889c8407d" />
+
+<img width="1134" height="604" alt="Screenshot 2026-09-23 222518" src="https://github.com/user-attachments/assets/32723920-bd6f-4216-9f84-6811b20a5b66" />
+
+<img width="1820" height="1090" alt="Screenshot 2026-09-23 213609" src="https://github.com/user-attachments/assets/c30d225c-7b50-4860-80e6-f40d2e3a6597" />
