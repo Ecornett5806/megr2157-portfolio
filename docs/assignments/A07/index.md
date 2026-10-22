@@ -46,7 +46,7 @@ Although Design III improved stress, deflection, and reported mass, its maximum 
 
 ## Analysis of Stress Reduction Limitations
 
-The maximum stress was difficult to reduce because it consistently occurred at the base of the cylinder, where the applied load transferred into the bracket's base. This area experiences concentrated stresses due to the geometry and the bending forces acting on the cylinder. Although increasing the cylinder diameter and modifying the rounded connection improved the results, these changes did not eliminate the stress concentration. Adding ribs and hollowing the cylinder also changed how the load traveled through the part, sometimes increasing the maximum stress rather than reducing it.
+The maximum stress was difficult to reduce because it consistently occurred at the base of the cylinder, where the applied load transferred into the bracket's base. This area experiences concentrated stresses due to the geometry and the bending forces acting on the cylinder. Although increasing the cylinder diameter and modifying the rounded connection improved the results, these changes did not eliminate the stress concentration.
 
 The original bracket geometry limited how much material could be added or removed without affecting its function, stiffness, and mass. Additionally, the maximum stress can be sensitive to mesh refinement and local geometric features, so the results must be checked for convergence before comparing designs. Design III reduced maximum stress from 74 ksi to 43 ksi, but this remained above the 9 ksi allowable stress required for a safety factor of 4. The iterations demonstrated that improving a design requires balancing stress, deflection, mass, and geometry rather than assuming that adding material or increasing a fillet will always improve performance.
 
@@ -203,6 +203,18 @@ The final design reduced the reported weight from 0.18 lb to 0.09534 lb, an over
 
 Design III was the lightest option, but the final design should not be selected based on weight alone. The actual material yield strength, required safety factor, deformation limit, pin fit, and mesh convergence must be verified before concluding that the design meets all engineering requirements.
 
+
+## Lessons Learned
+
+Throughout this assignment, I learned how changes in geometry affect a part's mass, stress distribution, deformation, and overall structural performance. The first design established a baseline for comparison, with a weight of 0.18000 lb and a maximum stress of 32 MPa. For the second design, I reduced the part's thickness by approximately half. This lowered the weight to 0.09623 lb, a reduction of approximately 46.54%. However, the maximum stress increased to 44 MPa. This demonstrated that reducing material can significantly decrease weight while also increasing the stress experienced by the remaining material.
+
+For the third design, I added 0.4-inch rounds around the holes to modify the transitions in the geometry. This reduced the weight slightly further to 0.09534 lb while increasing the maximum stress to 50 MPa. The results showed that adding rounds does not necessarily reduce the maximum stress in every design. Instead, the effect depends on the geometry, loading conditions, and location of the highest stress concentration. The third design achieved the greatest weight reduction compared with the original design, but its increased stress highlighted the importance of evaluating strength alongside material savings.
+
+I also learned that deformation alone does not determine whether a design is structurally acceptable. The third design had a maximum deformation of 0.000031586 in, compared with 0.000044053 in for the first design. Although the third design was lighter and experienced less deformation than the original, its maximum stress was higher. This reinforced the importance of evaluating multiple FEA results together rather than selecting a design based on a single measurement.
+
+Another important lesson was the role of mesh refinement in producing reliable simulation results. The number of elements increased from 389 in Design I to 735 in Design II and 9,151 in Design III. A higher element count provides a more detailed mesh, but it does not automatically prove that the results are converged. The mesh must be refined and the resulting stress and deformation values compared to determine whether further refinement changes the results by an acceptable amount. This is especially important around holes and rounded transitions, where stress can vary significantly over a small region.
+
+Finally, I learned that safety-factor calculations depend on the material properties assigned to the model. The safety factors in this analysis were estimated using an assumed yield strength of 250 MPa. These estimates should be verified against the actual material properties assigned in Creo before making a final engineering decision. Overall, this assignment taught me to approach design optimization as a balance between weight, stress, deformation, and simulation reliability. A successful design must reduce unnecessary material while maintaining sufficient structural strength and supporting its conclusions with verified material properties and converged FEA results.
 ## Time Log
 
 | Activity | Time |
@@ -216,7 +228,7 @@ Design III was the lightest option, but the final design should not be selected 
 - Low-carbon steel material properties assigned in Creo.
 - FEA stress and deformation plots.
 - CAD dimensions and mass properties for each design iteration.
-
+F
 ## CAD File
 
 Both Files are In the ZIP 
