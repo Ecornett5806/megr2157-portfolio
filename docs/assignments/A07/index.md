@@ -215,10 +215,8 @@ I also learned that deformation alone does not determine whether a design is str
 Another important lesson was the role of mesh refinement in producing reliable simulation results. The number of elements increased from 389 in Design I to 735 in Design II and 9,151 in Design III. A higher element count provides a more detailed mesh, but it does not automatically prove that the results are converged. The mesh must be refined and the resulting stress and deformation values compared to determine whether further refinement changes the results by an acceptable amount. This is especially important around holes and rounded transitions, where stress can vary significantly over a small region.
 
 Finally, I learned that safety-factor calculations depend on the material properties assigned to the model. The safety factors in this analysis were estimated using an assumed yield strength of 250 MPa. These estimates should be verified against the actual material properties assigned in Creo before making a final engineering decision. Overall, this assignment taught me to approach design optimization as a balance between weight, stress, deformation, and simulation reliability. A successful design must reduce unnecessary material while maintaining sufficient structural strength and supporting its conclusions with verified material properties and converged FEA results.
-## Time Log
 
-| Activity | Time |
-|---|---:|
+## Time Log
 
 | **Total Time** | 13 hrs |
 
