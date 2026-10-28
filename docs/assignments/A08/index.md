@@ -17,3 +17,19 @@ Design a gearbox which can be assembled and disassembled. The spur gears have a 
 | **Recommendation** | **Keep existing diameter** | **Keep existing diameter** |
 | **Final assessment** | **Sufficient** | **Sufficient** |
 
+## Design journal bearings:
+
+## Journal Bearing Design Parameters
+
+| **Parameter** | **Input Shaft Bearing** | **Output Shaft Bearing** |
+|---|---:|---:|
+| Shaft diameter, \(d\) | 0.125 in | 0.250 in |
+| Shaft speed, \(n\) | 2,933.33 rpm | 1,100 rpm |
+| Bearing length, \(L\) | To select | To select |
+| Radial bearing load, \(F\) | To calculate | To calculate |
+| Projected bearing area, \(dL\) | To calculate | To calculate |
+| Pressure, \(P\) | To calculate | To calculate |
+| Surface velocity, \(V\) | 96.21 ft/min | 72.26 ft/min |
+| PV value | To calculate | To calculate |
+| Allowable PV rating | From material table | From material table |
+| Bearing material | To select from lecture table | To select from lecture table |
