@@ -17,6 +17,9 @@ Design a gearbox which can be assembled and disassembled. The spur gears have a 
 | **Recommendation** | **Keep existing diameter** | **Keep existing diameter** |
 | **Final assessment** | **Sufficient** | **Sufficient** |
 
+<img width="4284" height="5712" alt="IMG_1920" src="https://github.com/user-attachments/assets/2178778b-0117-4bf3-a665-866fd2a8506c" />
+
+
 ## Design journal bearings:
 
 | Parameter | Input Bearing | Output Bearing |
@@ -28,9 +31,25 @@ Design a gearbox which can be assembled and disassembled. The spur gears have a 
 | Surface velocity | 96.21 ft/min | 72.26 ft/min |
 | PV rating | 8189 psi·ft/min | 1025 psi·ft/min |
 
-Shafts CAD: 
+<img width="3024" height="4032" alt="IMG_1921" src="https://github.com/user-attachments/assets/6a1e28d2-7e18-4ca5-b6ba-3bd15a80b32e" />
 
+Connected by Nuts N Bolts: 
 
+<img width="3024" height="4032" alt="IMG_1922" src="https://github.com/user-attachments/assets/2d1bfecb-27d8-48a3-a99a-7e77a5720ad6" />
+
+## Shafts CAD: 
+
+<img width="1418" height="168" alt="Screenshot 2026-10-28 230623" src="https://github.com/user-attachments/assets/b7cd8442-c0b0-4511-92fb-002c9dd38c3e" />
+
+<img width="1406" height="162" alt="Screenshot 2026-10-29 000057" src="https://github.com/user-attachments/assets/213ce1e5-c2a6-4627-820d-2fa942c1c4db" />
+
+<img width="422" height="356" alt="Screenshot 2026-10-28 234722" src="https://github.com/user-attachments/assets/495cd34c-d9f3-488f-89f7-85a2edfcdf2b" />
+
+<img width="1316" height="448" alt="Screenshot 2026-10-28 234739" src="https://github.com/user-attachments/assets/73505036-4087-4b94-befa-ee4d4d172128" />
+
+<img width="558" height="404" alt="Screenshot 2026-10-28 234850" src="https://github.com/user-attachments/assets/07dc6c30-c54d-4139-b75c-112e08e2ed19" />
+
+<img width="1484" height="744" alt="Screenshot 2026-10-28 234905" src="https://github.com/user-attachments/assets/63803c78-7dba-410a-98f3-8ef2aac616ea" />
 
 Gearbox CAD:
 
@@ -58,3 +77,32 @@ Final CAD Model Assembly:
 
 <img width="1000" height="632" alt="Screenshot 2026-10-28 232729" src="https://github.com/user-attachments/assets/1deadf5e-10fe-43ad-9659-59e903e65ad2" />
 
+Links for Assembly:
+
+[Assem1.zip](https://github.com/user-attachments/files/34111440/Assem1.zip)
+
+## All the rest of the parts: 
+
+[Shaft2.zip](https://github.com/user-attachments/files/34111505/Shaft2.zip)
+
+Drawings: 
+
+[7880K19_Metal Gear - 20 Degree Pressure Angle.zip](https://github.com/user-attachments/files/34112003/7880K19_Metal.Gear.-.20.Degree.Pressure.Angle.zip)
+
+[Shafts For A8.zip](https://github.com/user-attachments/files/34111952/Shafts.For.A8.zip)
+
+[Shaft2 (2).zip](https://github.com/user-attachments/files/34111926/Shaft2.2.zip)
+
+[7880K24_Metal Gear - 20 Degree Pressure Angle (1).zip](https://github.com/user-attachments/files/34112110/7880K24_Metal.Gear.-.20.Degree.Pressure.Angle.1.zip)
+
+[6391K611_Oil-Embedded 841 Bronze Sleeve Bearing (1).zip](https://github.com/user-attachments/files/34112109/6391K611_Oil-Embedded.841.Bronze.Sleeve.Bearing.1.zip)
+
+[6391K756_Oil-Embedded 841 Bronze Sleeve Bearing.zip](https://github.com/user-attachments/files/34112108/6391K756_Oil-Embedded.841.Bronze.Sleeve.Bearing.zip)
+
+[GearBox_Drawing.zip](https://github.com/user-attachments/files/34111855/GearBox_Drawing.zip)
+
+[Assem1 (2).zip](https://github.com/user-attachments/files/34112161/Assem1.2.zip)
+
+## Lessons Learned:
+
+This project taught me how gear dimensions, shaft sizes, and bearing selections affect the overall gearbox design. I learned that the housing must provide enough clearance for the gears while keeping the shafts and bearings properly aligned. I also learned that the shafts needed to be longer to accommodate the gears, bearings, and housing layout. Using McMaster-Carr components showed me the importance of checking actual catalog dimensions before finalizing a CAD model. Designing the housing as two separate pieces allows the gearbox to be assembled, inspected, and maintained more easily. Parametric modeling makes it easier to adjust dimensions when component sizes or fit requirements change.
