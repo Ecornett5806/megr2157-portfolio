@@ -95,7 +95,7 @@ Frame Designs:
 | Maximum displacement | TBD | in |
 | Minimum factor of safety | 3 | -- |
 
-<img width="3024" height="4032" alt="Image_261104_220322" src="https://github.com/user-attachments/assets/2f72e56a-7886-48f2-863a-6c0b475ab51e" />
+<img width="3024" height="4032" alt="Image_261104_222650" src="https://github.com/user-attachments/assets/9f089035-5134-495f-9230-2bcb4d1ee9bf" />
 
 <img width="3024" height="4032" alt="Image_261104_220507" src="https://github.com/user-attachments/assets/ef37940f-0d75-44b5-a995-abffe8bcb354" />
 
