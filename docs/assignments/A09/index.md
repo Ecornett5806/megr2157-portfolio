@@ -113,6 +113,3 @@ Another lesson was understanding that journal bearing selection involves more th
 During the frame design process, I learned how important alignment and structural stiffness are in rotating machinery. If the support plates deform or the shafts become misaligned, the belt may track incorrectly and place additional loads on the bearings. Using Creo Simulate provides a way to identify high-stress regions and areas of excessive displacement before manufacturing the frame.
 
 Finally, I learned that mechanical design is an iterative process. Changing one component can affect the dimensions, forces, and performance requirements of other components. Completing the belt, shaft, and bearing calculations before finalizing the frame helps ensure that the entire assembly is designed around consistent operating conditions rather than treating each component as an independent part.
-
-## Communicate
-
