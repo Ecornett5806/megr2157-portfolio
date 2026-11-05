@@ -46,6 +46,8 @@ Belt Design Knowns/ Unknowns:
 | d | Required belt diameter | TBD | in |
 | L | Belt circumference | 19.425 | in |
 
+<img width="550" height="1160" alt="image" src="https://github.com/user-attachments/assets/7ab2c805-d894-43a5-9c88-1ad24d72587c" />
+
 The following table identifies the material properties and operating conditions needed to determine the minimum shaft diameter. These values will be used to calculate the torsional stress, allowable shear stress, and minimum cross-sectional area required to safely transmit power from the pulley.
 
 Shaft Design
