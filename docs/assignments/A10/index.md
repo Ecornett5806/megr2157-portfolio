@@ -152,8 +152,21 @@ I began by parametrically designing the crosshead in SolidWorks as shown below.
 ## Lessons Learned (Lexie Cox)
 
 ## 2157 (Ethan Cornett)
+First I fixed the two sides:
 
-## Decide
+<img width="1768" height="1154" alt="image" src="https://github.com/user-attachments/assets/5c8f3135-647d-4fc6-95f0-1fa839d7df71" />
 
-## Communicate
+Then I added the force In the middle of the Beam at a 2KN amount:
+
+<img width="1838" height="1112" alt="image" src="https://github.com/user-attachments/assets/fc933f1c-1a70-4730-ab9b-212fe3664c63" />
+
+Defelction graph pre changes:
+
+<img width="980" height="856" alt="Screenshot 2026-11-11 131545" src="https://github.com/user-attachments/assets/4623bacf-d6ea-47ec-a804-c3b48d4bcb18" />
+Von Mises Stress graph pre Changes: 
+
+<img width="1104" height="940" alt="Screenshot 2026-11-11 131528" src="https://github.com/user-attachments/assets/5a8f2643-c61b-40f7-962e-8e51bed904e2" />
+
+The safety factor I got was about 27.6 we got this from morgans value of 276 then we divided by the max stress value of the graph being 10 MPA. 
+
 
