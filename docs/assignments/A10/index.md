@@ -1,13 +1,159 @@
 # A10 – Lead Screw Translating System
 
-## Objective
+## Project Objective
 
+The objective of this project was to conceptually design a mechanically driven tensile testing machine capable of applying up to 2 kN of axial tensile force to a test specimen. The system uses a leadscrew-driven crosshead to provide controlled, repeatable movement at speeds ranging from 1 to 50 mm/min. The design focuses on maintaining structural strength, minimizing crosshead deflection and misalignment, and providing reliable specimen gripping. Additional design considerations include selecting appropriate leadscrews, ensuring a factor of safety of 4, and developing a compact, safe, and ergonomic bench-top system. The final design must operate entirely through mechanical components, without electronics or software.
 
-## Analyze
+## Lead Screw: (Ethan Cornett)
 
+1. Minimum Leadscrew Diameter
+
+The first step in selecting the leadscrews was determining the minimum diameter required to safely support the tensile tester's maximum load of 2 kN. Since the design uses two identical leadscrews, the total load is distributed equally between them, resulting in an axial load of 1 kN per screw.
+
+304 stainless steel was initially selected as the material for the leadscrews, with a yield strength of 205 MPa. A factor of safety of 4 was applied to determine the minimum required diameter.
+
+The diameter was calculated using the axial stress relationship: O=F/A
+
+The allowable stress was determined using the material yield strength and required factor of safety. The resulting theoretical minimum diameter was approximately 4.99 mm. I decided to use a diameter of 12.7mm or 1/2 inch. 
+
+This calculation established the minimum structural requirement before selecting a commercially available leadscrew.
+
+<img width="4284" height="5712" alt="IMG_1994" src="https://github.com/user-attachments/assets/79b9d623-2dfb-4c2f-89f1-5216699750c0" />
+
+2. Rotational Speed Range
+
+After establishing the minimum diameter, the next step was determining the rotational speed required to achieve the specified crosshead speed.
+
+The tensile tester must operate between 1 mm/min and 50 mm/min. The relationship between linear crosshead speed and leadscrew rotational speed is:
+
+V=nL
+
+Where:
+
+(V) = Linear crosshead speed (mm/min)
+
+(n) = Leadscrew rotational speed (RPM)
+
+(L) = Leadscrew lead (mm/rev)
+
+The selected 1/2-10 Acme leadscrew has a lead of 0.100 inches per revolution, equivalent to 2.54 mm/rev, assuming a single-start thread.
+
+Using this lead, the required rotational speed range is:
+
+Minimum speed: 0.394 RPM
+
+Maximum speed: 19.69 RPM
+
+Both leadscrews will rotate at the same speed to maintain synchronized crosshead movement.
+
+<img width="4284" height="5712" alt="IMG_1995" src="https://github.com/user-attachments/assets/9d68d5f8-824b-4c5c-bd6a-8606b45c5a86" />
+
+3. Maximum Leadscrew Torque
+
+The next calculation determined the torque required to drive both leadscrews while maintaining the required 2 kN tensile load.
+
+Because the system uses two leadscrews, each screw carries approximately 1 kN of the applied load. The torque calculation accounts for the screw lead and the torque coefficient used in the preliminary design.
+
+The calculated torque requirement was approximately:
+
+T_i = FL/2pi(n)
+
+T_T = 2FL/2pi(n)
+
+T_S =FR_T(2)(N)
+
+Torque per leadscrew: 11.47 in·lbf
+
+Combined torque: 22.94 in·lbf (2.59 N·m)
+
+A factor of safety of 4 was then applied to determine the design torque requirement.
+
+The resulting combined design torque was approximately 10.36 N·m.
+
+This value provides the preliminary torque requirement for selecting the mechanical drive system. Actual operating torque will also depend on the selected nut, lubrication, alignment, and friction.
+
+Supporting image: Insert torque calculations and the free-body diagram showing the load distribution between both leadscrews.
+
+4. Commercial Leadscrew Selection
+
+After determining the minimum diameter, rotational speed range, and torque requirements, the team moved toward selecting a commercially available leadscrew.
+
+The selected design uses two identical Roton 1/2-10 Acme leadscrews. The 1/2-inch nominal diameter exceeds the calculated minimum diameter of approximately 4.99 mm, while the 0.100-inch lead provides the required crosshead speed range at approximately 0.394–19.69 RPM.
+
+Using identical leadscrews also allows both sides of the crosshead to move together, helping maintain alignment during tensile testing.
+
+4. Commercial Leadscrew Selection
+
+After determining the minimum diameter, rotational speed range, and torque requirements, the team moved toward selecting a commercially available leadscrew.
+
+The selected design uses two identical Roton 1/2-10 Acme leadscrews. The 1/2-inch nominal diameter exceeds the calculated minimum diameter of approximately 4.99 mm, while the 0.100-inch lead provides the required crosshead speed range at approximately 0.394–19.69 RPM.
+
+Using identical leadscrews also allows both sides of the crosshead to move together, helping maintain alignment during tensile testing.
+
+Supporting images:
+
+<img width="1900" height="168" alt="image" src="https://github.com/user-attachments/assets/a942e818-a7cf-4b56-96bc-ac5d5b328644" />
+
+Design Outcome:
+
+The calculations established the initial requirements for the tensile tester's leadscrew system. The team determined the minimum required screw diameter, the rotational speed range needed to achieve the specified crosshead speeds, and the preliminary torque requirement for the drive system.
+
+These calculations provided the foundation for selecting the commercial leadscrews and developing the remaining mechanical design.
+Supporting images:
+
+<img width="882" height="1166" alt="image" src="https://github.com/user-attachments/assets/e33f2c2e-001a-4fc4-b7aa-2ddf71d9b302" />
+
+## Nut and Flange (Lexie Cox)
+
+## Crosshead + Assembly (Morgan Gregory)
+
+Designing the Crosshead: Morgan Gregory
+To begin, I needed to find both the length, from research, and the base, from the nut flange. The length was chosen to be 300 mm and the base was chosen from the flange nut diameter to be 31.75 mm. The rest of the knowns and unknowns are shown below.
+
+<img width="455" height="330" alt="image" src="https://github.com/user-attachments/assets/affecb33-bd4d-495b-88d7-5d79ea54f774" />
+
+I then found the maximum shear and yield stresses using the safety factor of 4.
+
+<img width="394" height="189" alt="image" src="https://github.com/user-attachments/assets/ad332f8c-b85c-43c0-af11-6b56cccf9642" />
+
+Now it is important to calculate minimum values such as thickness of the beam. I began by doing the stress analysis. I analyzed shear stress first and bending stress second. The math is shown below, with minimum h values. 6061 aluminum was the chosen material for its lighter weight and cost effectiveness.
+
+<img width="850" height="290" alt="image" src="https://github.com/user-attachments/assets/91fb4e90-9a9d-486b-8968-abe6377aa40b" />
+
+The minimum value of h for came from the bending stress so far at 11.33 mm.
+
+Now it was important to find the h with the max deflection of .1 mm.
+
+<img width="818" height="217" alt="image" src="https://github.com/user-attachments/assets/69f41f7a-5b58-4519-ae4a-055d9a017e5b" />
+
+The deflection gave the final value of h as 21.3 mm.
+
+Next is the drawing for the crosshead. Sketches are shown below. Holes are measured as 1 inch.
+
+<img width="815" height="560" alt="image" src="https://github.com/user-attachments/assets/03f1a3b3-7e4f-4407-8260-a6f860a1f382" />
+
+Parametric Modeling - Morgan Gregory
+I began by parametrically designing the crosshead in SolidWorks as shown below.
+
+<img width="921" height="80" alt="image" src="https://github.com/user-attachments/assets/ab815211-cd49-4fa7-b102-59fcbceadf5b" />
+
+<img width="1286" height="485" alt="image" src="https://github.com/user-attachments/assets/f810fa4c-db25-46b7-8840-884ac4db123d" />
+
+<img width="1916" height="840" alt="image" src="https://github.com/user-attachments/assets/dc14b5f8-606c-4c22-bf80-6cc5d6924a63" />
+
+<img width="1004" height="401" alt="image" src="https://github.com/user-attachments/assets/7dd0f926-0e76-409e-91ee-aeddceaf0ab1" />
+
+<img width="1004" height="401" alt="image" src="https://github.com/user-attachments/assets/09cedc8a-174c-49c5-a11d-b4ae47a5c934" />
+
+<img width="877" height="379" alt="image" src="https://github.com/user-attachments/assets/f817b956-bf1a-49dc-b6e2-428a55a6b362" />
+
+## Cost (Lexie, Ethan, Morgan)
+
+## Lessons Learned (Lexie Cox)
+
+## 2157 (Ethan Cornett)
 
 ## Decide
-_Reference your concept selection (Pugh matrix) here. How does this design follow from that decision?_
 
 ## Communicate
 
