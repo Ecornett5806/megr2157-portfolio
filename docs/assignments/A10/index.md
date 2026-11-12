@@ -95,6 +95,18 @@ Supporting images:
 
 ## Nut and Flange (Lexie Cox)
 
+For the Nut and Flange I started out by listing all of the knowns and unknowns needed for the calculations.
+
+<img width="697" height="345" alt="image" src="https://github.com/user-attachments/assets/163dc4e8-b955-4d80-95a5-cd1f75cf9a25" />
+
+I then found the bending stress that would be on the chosen nut.
+
+<img width="700" height="222" alt="image" src="https://github.com/user-attachments/assets/73c75ebf-1f4a-484f-82eb-429757df50b6" />
+
+It is important to make sure that this is the correct chosen nut and that it would not fail in the machine. To do this I found the maximum bending stress. The calculated bending stress was less than the maximum bending stress meaning that this is the correct nut.
+
+<img width="748" height="310" alt="image" src="https://github.com/user-attachments/assets/024c44ab-22c1-4258-80cd-dfe2fc2c52bb" />
+
 ## Crosshead + Assembly (Morgan Gregory)
 
 Designing the Crosshead: Morgan Gregory
@@ -151,6 +163,11 @@ The SolidWorks Assembly is shown below and the part file for the crosshead and t
 https://github.com/user-attachments/files/34723579/Crosshead.zip
 
 https://github.com/user-attachments/files/34723581/A10Assembly.zip
+
+## Lessons Learned (Lexie Cox)
+In this assignment, we designed a conceptual tensile tester by establishing minimum testing requirements and calculating the specifications for its individual components. The most challenging aspect of the project was selecting appropriate bolt lengths and sourcing bearing fixtures that fit within our design constraints. This highlighted the critical importance of balancing cost, material properties, and applied forces when selecting off-the-shelf components for a mechanical design.
+
+This assignment took us roughly 6 hours to complete.
 
 ## Cost (Lexie, Ethan, Morgan)
 
