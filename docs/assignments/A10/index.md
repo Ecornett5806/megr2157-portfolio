@@ -122,7 +122,8 @@ Next is the drawing for the crosshead. Sketches are shown below. Holes are measu
 
 <img width="815" height="560" alt="image" src="https://github.com/user-attachments/assets/03f1a3b3-7e4f-4407-8260-a6f860a1f382" />
 
-Parametric Modeling - Morgan Gregory
+## Parametric Modeling - Morgan Gregory
+
 I began by parametrically designing the crosshead in SolidWorks as shown below.
 
 <img width="921" height="80" alt="image" src="https://github.com/user-attachments/assets/ab815211-cd49-4fa7-b102-59fcbceadf5b" />
@@ -240,7 +241,13 @@ Defelction graph Fine Mesh post changes:
 
 The safety factor I got was about 8.87 we got this from morgans value of 276 then we divided by the max stress value of the graph being 31.116 MPA.
 
-Drawing: 
+## Drawing: 
 
 [Crosshead.zip](https://github.com/user-attachments/files/34721985/Crosshead.zip)
 
+
+## Refrences:
+
+https://mechanicalc.com/reference/beam-deflection-tables
+
+https://repositum.tuwien.at/bitstream/20.500.12708/200949/1/Demmel%20Stella%20-%202024%20-%20Design%20manufacturing%20and%20testing%20of%20an%20open-source...pdf
