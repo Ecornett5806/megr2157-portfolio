@@ -105,6 +105,8 @@ Supporting images:
 
 ## Nut and Flange (Lexie Cox)
 
+<img width="900" height="804" alt="image" src="https://github.com/user-attachments/assets/8b19efa0-91a2-4a26-a32c-e2ab6f0286c1" />
+
 ## Crosshead + Assembly (Morgan Gregory)
 
 Designing the Crosshead: Morgan Gregory
