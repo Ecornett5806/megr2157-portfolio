@@ -147,6 +147,20 @@ I began by parametrically designing the crosshead in SolidWorks as shown below.
 
 <img width="877" height="379" alt="image" src="https://github.com/user-attachments/assets/f817b956-bf1a-49dc-b6e2-428a55a6b362" />
 
+Assembly: 
+
+The SolidWorks Assembly is shown below and the part file for the crosshead and the assembly are below.
+
+<img width="987" height="532" alt="image" src="https://github.com/user-attachments/assets/1c019b66-de2f-4694-885b-876c3dc9df6b" />
+
+<img width="792" height="636" alt="image" src="https://github.com/user-attachments/assets/025aa102-b779-4363-9ff4-7e9d8a8049d4" />
+
+<img width="721" height="625" alt="image" src="https://github.com/user-attachments/assets/a6a7e610-4010-45a9-b65a-461b0704f5d8" />
+
+https://github.com/user-attachments/files/34723579/Crosshead.zip
+
+https://github.com/user-attachments/files/34723581/A10Assembly.zip
+
 ## Cost (Lexie, Ethan, Morgan)
 
 ## Lessons Learned (Lexie Cox)
