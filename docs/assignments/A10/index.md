@@ -72,8 +72,6 @@ The resulting combined design torque was approximately 10.36 N·m.
 
 This value provides the preliminary torque requirement for selecting the mechanical drive system. Actual operating torque will also depend on the selected nut, lubrication, alignment, and friction.
 
-Supporting image: Insert torque calculations and the free-body diagram showing the load distribution between both leadscrews.
-
 4. Commercial Leadscrew Selection
 
 After determining the minimum diameter, rotational speed range, and torque requirements, the team moved toward selecting a commercially available leadscrew.
