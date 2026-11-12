@@ -80,14 +80,6 @@ The selected design uses two identical Roton 1/2-10 Acme leadscrews. The 1/2-inc
 
 Using identical leadscrews also allows both sides of the crosshead to move together, helping maintain alignment during tensile testing.
 
-4. Commercial Leadscrew Selection
-
-After determining the minimum diameter, rotational speed range, and torque requirements, the team moved toward selecting a commercially available leadscrew.
-
-The selected design uses two identical Roton 1/2-10 Acme leadscrews. The 1/2-inch nominal diameter exceeds the calculated minimum diameter of approximately 4.99 mm, while the 0.100-inch lead provides the required crosshead speed range at approximately 0.394–19.69 RPM.
-
-Using identical leadscrews also allows both sides of the crosshead to move together, helping maintain alignment during tensile testing.
-
 Supporting images:
 
 <img width="1900" height="168" alt="image" src="https://github.com/user-attachments/assets/a942e818-a7cf-4b56-96bc-ac5d5b328644" />
