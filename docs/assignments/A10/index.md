@@ -231,3 +231,7 @@ Defelction graph Fine Mesh post changes:
 
 The safety factor I got was about 8.87 we got this from morgans value of 276 then we divided by the max stress value of the graph being 31.116 MPA.
 
+Drawing: 
+
+[Crosshead.zip](https://github.com/user-attachments/files/34721985/Crosshead.zip)
+
