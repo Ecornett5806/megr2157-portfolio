@@ -160,13 +160,39 @@ Then I added the force In the middle of the Beam at a 2KN amount:
 
 <img width="1838" height="1112" alt="image" src="https://github.com/user-attachments/assets/fc933f1c-1a70-4730-ab9b-212fe3664c63" />
 
-Defelction graph pre changes:
+Defelction graph Fine Mesh pre changes:
 
 <img width="980" height="856" alt="Screenshot 2026-11-11 131545" src="https://github.com/user-attachments/assets/4623bacf-d6ea-47ec-a804-c3b48d4bcb18" />
-Von Mises Stress graph pre Changes: 
+
+Von Mises Stress Graph Fine mesh pre-Changes: 
 
 <img width="1104" height="940" alt="Screenshot 2026-11-11 131528" src="https://github.com/user-attachments/assets/5a8f2643-c61b-40f7-962e-8e51bed904e2" />
 
 The safety factor I got was about 27.6 we got this from morgans value of 276 then we divided by the max stress value of the graph being 10 MPA. 
 
+Now I moved on to a Middle between fine and course mesh: 
 
+Von Mises Stress Graph Middle mesh pre-Changes
+
+<img width="948" height="890" alt="Screenshot 2026-11-11 193225" src="https://github.com/user-attachments/assets/2a7a5b62-d5e0-4a4f-9604-dffccb6129bf" />
+
+Defelction graph Middle Mesh pre changes:
+
+<img width="680" height="828" alt="Screenshot 2026-11-11 193307" src="https://github.com/user-attachments/assets/87b06a2a-8669-418a-8cbd-aba495a97239" />
+
+The safety factor I got was about 9 we got this from morgans value of 276 then we divided by the max stress value of the graph being 31.016 MPA.
+Meaning even with the more course mesh we still are way above the 4-safety factor. 
+
+Finally I used a super course mesh and the results were the following: 
+
+Von Mises Stress Graph Course mesh pre-Changes
+
+<img width="982" height="822" alt="Screenshot 2026-11-11 193357" src="https://github.com/user-attachments/assets/c5c9903a-dd62-49fe-b633-35522bae25e9" />
+
+Defelction graph Course Mesh pre changes:
+
+<img width="914" height="810" alt="Screenshot 2026-11-11 193407" src="https://github.com/user-attachments/assets/15f74e4f-02f8-4b24-8d01-e996c283dd55" />
+
+
+The safety factor I got was about 9.25 we got this from morgans value of 276 then we divided by the max stress value of the graph being 29.828 MPA.
+Meaning even with the super course mesh we still are way above the 4-safety factor. 
