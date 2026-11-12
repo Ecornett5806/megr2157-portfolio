@@ -193,6 +193,41 @@ Defelction graph Course Mesh pre changes:
 
 <img width="914" height="810" alt="Screenshot 2026-11-11 193407" src="https://github.com/user-attachments/assets/15f74e4f-02f8-4b24-8d01-e996c283dd55" />
 
-
 The safety factor I got was about 9.25 we got this from morgans value of 276 then we divided by the max stress value of the graph being 29.828 MPA.
 Meaning even with the super course mesh we still are way above the 4-safety factor. 
+
+Optimization Pass:
+
+For the optimization I decided to just add a small 2mm fillet to the holes to keep them rounded which should lead to slightly less stress around the holes. 
+Von Mises Stress Graph Course mesh pre-Changes
+
+Von Mises Stress Graph Course mesh post-Changes
+
+<img width="1080" height="856" alt="Screenshot 2026-11-11 195022" src="https://github.com/user-attachments/assets/b4f19684-d6ad-4d71-8f99-c0dc3fc41e1c" />
+
+Defelction graph Course Mesh post changes:
+
+<img width="916" height="814" alt="image" src="https://github.com/user-attachments/assets/48f30510-d838-4f6f-b605-f45c09c52a47" />
+
+The safety factor I got was about 9 we got this from morgans value of 276 then we divided by the max stress value of the graph being 30.667 MPA.
+
+Von Mises Stress Graph Middle mesh post-Changes
+
+<img width="968" height="828" alt="image" src="https://github.com/user-attachments/assets/88aec988-e4c8-4b5f-b485-7e0fac3c138d" />
+
+Defelction graph Middle Mesh post changes:
+
+<img width="900" height="798" alt="image" src="https://github.com/user-attachments/assets/06eae879-29a5-4ca4-9e17-3daa123519da" />
+
+The safety factor I got was about 9 we got this from morgans value of 276 then we divided by the max stress value of the graph being 30.767 MPA.
+
+Von Mises Stress Graph Fine mesh post-Changes
+
+<img width="1020" height="846" alt="image" src="https://github.com/user-attachments/assets/143de777-7972-4c5f-aa59-f8f88479697c" />
+
+Defelction graph Fine Mesh post changes:
+
+<img width="900" height="804" alt="image" src="https://github.com/user-attachments/assets/457ea2f4-916b-49e9-ad7e-ffb01750b762" />
+
+The safety factor I got was about 8.87 we got this from morgans value of 276 then we divided by the max stress value of the graph being 31.116 MPA.
+
