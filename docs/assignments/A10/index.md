@@ -163,6 +163,11 @@ https://github.com/user-attachments/files/34723581/A10Assembly.zip
 
 ## Cost (Lexie, Ethan, Morgan)
 
+| Item Number | Quantity | Name | Cost/Item | Total Cost | Purchase Link |
+|---|---:|---|---:|---:|---|
+| 1 | 2 | Leadscrew | $56.52 | $113.04 | [Roton 59837](https://www.roton.com/) |
+| 2 | 2 | Nut/Flange | $178.60 | $357.20 | [McMaster-Carr 97790A110](https://www.mcmaster.com/97790A110/) |
+| | | **Grand Total** | | **$470.24** | |
 ## Lessons Learned (Lexie Cox)
 
 ## 2157 (Ethan Cornett)
