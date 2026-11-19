@@ -1,10 +1,5 @@
 # A11 – Motor Selection
 
-Purpose
-
-
-
-
 ## Motor Selection and Attachments: Morgan Gregory
 
 To begin I calculated the maximum speed the motor will need to endure. The calculations are shown below.
@@ -67,13 +62,73 @@ I then began the coupling design using the same process, knowns and unknowns, FB
 
 <img width="613" height="678" alt="Screenshot 2026-11-17 194837" src="https://github.com/user-attachments/assets/f3b40e59-92cd-4cb1-909d-837243d3a3a7" />
 
-Analyze and design a Frame
+## Analyze and design a Frame (Lexie Cox)
 
-Chosen connecter:
+In order to have a stable frame it needs to have connectors. To find which bracket I needed to choose I needed to find the torsion created by the motors. First I listed my knowns and unknowns. The 300 mm of length is from the previous assignment. 
 
-https://www.mcmaster.com/4844N44/?utm_term=t-slotted+framing+mounting+brackets&matchtype=e&campaignid=22726943438&adgroupid=181516498693&location=9191972&gad_source=1&gad_campaignid=22726943438&gbraid=0AAAAACLR9bxoQx36KLF0mBsANRs9y9QD6&gclid=CjwKCAjwnZfPBhAGEiwAzg-VzLbTAmYf7XUBDFs7MAYUOkFyr6vDTXVNg8zAIX-icwUoSbluXYTjeRoCbBsQAvD_BwE 
 
-This is chosen because it fits the 
+<img width="455" height="177" alt="Screenshot 2026-11-19 034954" src="https://github.com/user-attachments/assets/454387c9-a3e0-4a28-8b51-ab69587fa26e" />
+
+
+Then I created a Free body diagram showing how the motors will twist the screws. 
+
+<img width="212" height="241" alt="Screenshot 2026-11-19 034957" src="https://github.com/user-attachments/assets/a88cd2ef-9f1b-4c43-9e79-e09b0f1e0335" />
+
+
+I then found the torsion by finding the moments of the reacting forces of points A and B.
+
+<img width="497" height="500" alt="Screenshot 2026-11-19 035003" src="https://github.com/user-attachments/assets/d6f6a435-b62a-48ee-bbfc-7baddcca0ba0" />
+
+
+After finding the torsion that the motors would cause I needed to find a bracket that will support the frame through this force. I chose this triangle bracket: https://www.mcmaster.com/4844N44/?utm_term=t-slotted+framing+mounting+brackets&matchtype=e&campaignid=22726943438&adgroupid=181516498693&location=9191972&gad_source=1&gad_campaignid=22726943438&gbraid=0AAAAACLR9bxoQx36KLF0mBsANRs9y9QD6&gclid=CjwKCAjwnZfPBhAGEiwAzg-VzLbTAmYf7XUBDFs7MAYUOkFyr6vDTXVNg8zAIX-icwUoSbluXYTjeRoCbBsQAvD_BwE 
+
+I chose this bracket because I know that triangles make better supports and are overall stronger than a regular L-shaped bracket. I also found that it was the correct dimensions for the frame I was about to create. 
+
+In the assembly I started out by putting just the assembly from assignment 10 as a good starting point. 
+
+<img width="197" height="470" alt="Screenshot 2026-11-19 030939" src="https://github.com/user-attachments/assets/3a93a55a-5353-40f6-a199-8e3fb08cb1ff" />
+
+I then found the part and material that would make up the actual frame of the assembly. I had to make cuts in the piece to accommodate for the size of the crosshead. Each cut piece is below:
+
+Top:
+
+<img width="1197" height="502" alt="Screenshot 2026-11-19 031224" src="https://github.com/user-attachments/assets/52925ae0-da96-4cc4-b4a4-41deef6ea1ce" />
+
+Sides:
+
+<img width="876" height="333" alt="Screenshot 2026-11-19 031202" src="https://github.com/user-attachments/assets/b58902ec-b8a0-4aa5-b20b-68230b321a0a" />
+
+Bottom:
+
+<img width="1197" height="502" alt="Screenshot 2026-11-19 031224" src="https://github.com/user-attachments/assets/065b981d-3c81-4dd8-b9b3-ba96e9affaf7" />
+
+I then put the frame together and merged the two parts. 
+
+<img width="280" height="420" alt="Screenshot 2026-11-19 030954" src="https://github.com/user-attachments/assets/7c1f7977-e7d7-4872-be04-dfdeaefb1844" />
+
+Then I found the CAD model of the bracket I chose and put it on the top of the frame. I ended up having to take the brackets off because when I went to do the FEA it would not work. 
+
+<img width="627" height="713" alt="Screenshot 2026-11-19 031114" src="https://github.com/user-attachments/assets/12a90070-b02f-4268-82f3-4fe13691b327" />
+
+<img width="746" height="693" alt="Screenshot 2026-11-18 232906" src="https://github.com/user-attachments/assets/bf412073-360a-40d8-b7df-83a15f00f24d" />
+
+[Assignment11.zip](https://github.com/user-attachments/files/35074245/Assignment11.zip)
+
+After creating the assembly I had to change the assembly to a part in order to do the FEA diagrams. For this I made the mesh pretty fine in order for the simulation to work. 
+
+<img width="573" height="391" alt="Screenshot 2026-11-19 022701" src="https://github.com/user-attachments/assets/0cddf9f6-e125-42c5-af98-1897defa852b" />
+
+<img width="562" height="430" alt="Screenshot 2026-11-19 022710" src="https://github.com/user-attachments/assets/8c394d27-3027-4278-b1c2-fb2e2967cf10" />
+
+The maximum von Mises stress was around 1.573 MPA and this occurred in the middle of the top frame. The maximum vertical deflection was around 0.025 mm which also occurred in the middle of the top frame. The factor of safety it gave me was 32.546. The main thing that I would say would improve this deflection would be if the brackets were able to be used in the FEA diagrams.
+
+For the next set of FEA diagrams the forces will be coming from the sides. I also meshed these components pretty fine. 
+
+<img width="576" height="437" alt="Screenshot 2026-11-19 022717" src="https://github.com/user-attachments/assets/580342e9-1f86-453c-a0a5-6b57df10538d" />
+
+<img width="572" height="471" alt="Screenshot 2026-11-19 022729" src="https://github.com/user-attachments/assets/04876e31-bfea-4ecc-b433-959eaa2eebcd" />
+
+The maximum von Mises stress was around 0.8941 Mpa. This occurred at the bottom of the frame below the bottom frame. The maximum vertical deflection was around 0.004457 mm. This occurred in the middle of the side frames and they bent in. The factor of safety was 142.6. This is a very optimal factor of safety. One thing that I would change about this design is maybe making the screws shorter if possible making the entire thing smaller. This would make it more secure and have less of an ability to bend. 
 
 ## Design Floating Bearing Mount: ( Ethan Cornett)
 
