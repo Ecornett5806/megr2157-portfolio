@@ -88,14 +88,12 @@ Design Floating Bearing Mount
 Decided to make the base 2.5 x 2.5 x .75 so that the bracket is small enough to fit in smaller spaces and to save on material. The Tolerances I used was RC3 with a diameter between .4-.71 which ours is .5 
 The tolerances were based on the above picture where I minus the given values by the starting diameter. 
 
-
-
-Bill of Materials and Labor Costs
+## Bill of Materials and Labor Costs
 
 | Item Number | Quantity | Name | Cost/Item | Cost | Purchase Link |
 | ---: | ---: | --- | ---: | ---: | --- |
-| 1 | 2 | Leadscrew | $56.52 | $113.04 | [Lead Screw](LEAD_SCREW_URL) |
-| 2 | 2 | Nut/Flange | $179 | $357.20 | [Nut](NUT_URL) |
+| 1 | 2 | Leadscrew | $56.52 | $113.04 | [Lead Screw](https://www.roton.com/product/acme-stainless-steel-screw-right-59837/) |
+| 2 | 2 | Nut/Flange | $179 | $357.20 | [Nut](https://www.mcmaster.com/97790A110/) |
 | 3 | 1 | Crosshead | $200 | $200.00 | N/A |
 | 4 | 2 | Bearing Mount | $21.45 | $42.90 | N/A |
 | 5 | 4 | Frame | $17.60 | $70.40 | N/A |
@@ -107,6 +105,7 @@ Bill of Materials and Labor Costs
 | Morgan Gregory | 10 | $30 | $300 |
 | Lexie Cox | 10 | $30 | $300 |
 | | | **Total Cost** | **$900** |
+
 
 
 Lessons Learned
