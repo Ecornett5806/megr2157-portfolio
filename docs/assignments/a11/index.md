@@ -75,7 +75,7 @@ https://www.mcmaster.com/4844N44/?utm_term=t-slotted+framing+mounting+brackets&m
 
 This is chosen because it fits the 
 
-Design Floating Bearing Mount
+## Design Floating Bearing Mount: ( Ethan Cornett)
 
 <img width="3024" height="4032" alt="IMG_2037" src="https://github.com/user-attachments/assets/281ede0e-0c33-47c3-88f3-f2dd81ab00f9" />
 
@@ -122,7 +122,7 @@ The tolerances were based on the above picture where I minus the given values by
 
 
 
-Lessons Learned
+Lessons Learned: ( Ethan Cornett)
 
 1. How to choose a RC3 fit to fit a leadscrew-
 
