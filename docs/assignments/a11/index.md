@@ -197,7 +197,7 @@ https://electrocraft.com/products/bldc/rpx52/
 
 ## 2157 section: (Ethan Cornett)
 
-All the drawings minus the Assembly are in here: 
+All the drawings:
 
 [a_11_bearing_2.drw.zip](https://github.com/user-attachments/files/35065244/a_11_bearing_2.drw.zip)
 
