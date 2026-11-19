@@ -83,7 +83,21 @@ Design Floating Bearing Mount
 
 <img width="1390" height="838" alt="Screenshot 2026-11-17 154155" src="https://github.com/user-attachments/assets/fd42b500-430c-48fa-bd3a-bfe6736fb2ef" />
 
+CAD in more depth:
 
+<img width="942" height="824" alt="image" src="https://github.com/user-attachments/assets/6cee662a-ccdb-4f9e-96e1-ebdf1a85f885" />
+
+<img width="704" height="764" alt="image" src="https://github.com/user-attachments/assets/80526366-e6ac-4e8c-ab0a-0876a2a1f38e" />
+
+<img width="796" height="818" alt="image" src="https://github.com/user-attachments/assets/08616bf0-c69b-4a4f-8d1d-b34b7ba76c8d" />
+
+<img width="790" height="786" alt="image" src="https://github.com/user-attachments/assets/c1271f14-80cc-4e32-9c5e-02973a6bf190" />
+
+<img width="954" height="904" alt="image" src="https://github.com/user-attachments/assets/54038b85-a491-4ce7-bb38-66e60cf9ff22" />
+
+<img width="766" height="758" alt="image" src="https://github.com/user-attachments/assets/91ee8ab8-8313-4c66-a1cb-a49c5769cb2d" />
+
+<img width="854" height="836" alt="image" src="https://github.com/user-attachments/assets/acaae8e5-08a6-4b5c-b2f0-1655cfbe82c1" />
 
 Decided to make the base 2.5 x 2.5 x .75 so that the bracket is small enough to fit in smaller spaces and to save on material. The Tolerances I used was RC3 with a diameter between .4-.71 which ours is .5 
 The tolerances were based on the above picture where I minus the given values by the starting diameter. 
